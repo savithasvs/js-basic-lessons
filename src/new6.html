@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><button onclick="openwindow()">Open New</button></p>
+    <p><button onclick="closeAll()">Close Them</button></p>
+    <script>
+        function openwindow(){
+            //mywindow=window.open("http://www.google.com","page2","height=300,width=400");
+           var mywindow=window.open("http://www.google.com","page2","width=300","status=1","toolbar=1");
+        }
+        function closeAll(){
+            mywindow.closeAll();
+        }
+    </script>
+</body>
+</html>
