@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>functions</title>
+    <script src="./scripts/demoa.js?v=2"></script>
+</head>
+
+<body>
+    <p>
+        <label for="firstvalue">X:</label>
+        <input id="firstvalue" type="text" placeholder="enter a number" />
+    </p>
+    <p>
+        <label for="second value">Y:</label>
+        <input id="second value" type="text" placeholder="enter a number" />
+    </p>
+    <p>
+        <input type="button" value="ok" onclick="addition()" />
+        <input type="button" value="Sum" onclick="sum()" />
+        <input type="button" value="addagain" onclick="add(100,55)" />
+        <input type="button" value="addagain" onclick="add(document.getElementById('firstvalue').value)" />
+    </p>
+    <p>
+        <input type="button" value="problem1" onclick="problems1()" />
+        <input type="button" value="problem2" onclick="problems2()" />
+        <input type="button" value="problem3" onclick="problems3()" />
+        <input type="button" value="problem4" onclick="printdigits()" />
+    </p>
+    <div id="result"></div>
+</body>
+
+</html>
