@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, #1e1f29, #251f2e);
+}
+
+main {
+  background: url(../images/bg-stars.svg);
+  height: 100vh;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+main h1 {
+  text-align: center;
+  color: white;
+  padding: 100px 0;
+  font-size: 27px;
+  letter-spacing: 8px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+}
+
+.clock_card {
+  border-radius: 8px;
+  width: 140px;
+  height: 70px;
+}
+
+.top {
+  background-color: hsl(236, 21%, 26%);
+}
+
+.number {
+  position: absolute;
+  font-size: 4.5rem;
+  top: 23px;
+  left: 26px;
+  color: hsl(345, 95%, 68%);
+}
+
+.bottom {
+  background-color: hsl(236, 21%, 26%);
+}
+
+.card span:not(:first-of-type) {
+  display: block;
+  margin-top: 15px;
+  color: hsl(237, 18%, 59%);
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+
+footer {
+  background: url(../images/pattern-hills.svg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+footer div img {
+  margin: 10px;
+}
+
+@media (max-width: 800px){
+  main {
+    padding: 10px;
+    height: 79vh;
+  }
+
+  main h1 {
+    padding: 100px 10px;
+  }
+
+  .container {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .clock_card {
+    display: none;
+  }
+
+  .number {
+    position: unset;
+    font-size: 2.5rem;
+  }
+  
+  .card span:not(:first-of-type) {
+    margin-top: 0;
+    font-size: 13px;
+  }
+
+  footer {
+    position: unset;
+  }
+}
