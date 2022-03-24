@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./favicon-32x32.png"
-    />
-    <script
-      src="https://kit.fontawesome.com/58b15347c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Frontend Mentor | Article preview component</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      media="(min-width: 1000px)"
-      href="./css/desktop.css"
-    />
-  </head>
-  <body>
-    <main class="content-card">
-      <img src="./images/drawers.jpg" alt="" />
-      <div class="aside">
-        <div class="content-text">
-          <h1>
-            Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home
-          </h1>
-          <p>
-            Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I’ve got some simple tips to help
-            you make any room feel complete.
-          </p>
-        </div>
-        <div class="content-footer off">
-          <div class="content-profile">
-            <img src="./images/avatar-michelle.jpg" alt="" />
-            <div class="content-info">
-              <p>Michelle Appleton</p>
-              <span>28 Jun 2020</span>
-            </div>
-          </div>
-          <div class="content-socials">
-            <span>S H A R E</span>
-            <i class="fa fa-facebook-square icon" aria-hidden="true"></i>
-            <i class="fa fa-twitter icon" aria-hidden="true"></i>
-            <i class="fa fa-pinterest icon" aria-hidden="true"></i>
-          </div>
-          <div class="content-btn">
-            <div class="btn" onclick="share()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
-                <path
-                  fill="#6E8098"
-                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./themes/style.css" />
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+
+<body>
+  <main>
+    <div class="image-container"></div>
+    <section>
+      <div class="copy">
+        <h2>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h2>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
       </div>
-    </main>
-    <script src="./script.js"></script>
-  </body>
+      <footer>
+        <div class="author">
+          <img src="./images/avatar-michelle.jpg" alt="michelle appleton avatar" />
+          <div class="about">
+            <h3>Michelle Appleton</h3>
+            <time datetime="2020-06-07">28 Jun 2020</time>
+          </div>
+        </div>
+        <div class="arrow">
+          <img src="./images/icon-share.svg" alt="share" />
+        </div>
+        <div class="share">
+          <p>share</p>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/icon-facebook.svg" alt="facebook icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-twitter.svg" alt="facebook icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-pinterest.svg" alt="facebook icon" /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="#">Savitha</a>.
+  </div>
+  <script src="./script/script.js"></script>
+</body>
+
 </html>
