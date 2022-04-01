@@ -1,82 +1,8 @@
-import { submit } from './submit.js';
-import { search } from './search.js';
-const cities = {
-  Select: 'Your City',
-  Ariyalur: '',
-  Chengalpattu: '',
-  Chennai: '',
-  Coimbatore: '',
-  Cuddalore: '',
-  Dharmapuri: '',
-  Dindigul: '',
-  Erode: '',
-  Kallakurichi: '',
-  Kanchipuram: '',
-  Kanyakumari: '',
-  Karur: '',
-  Krishnagiri: '',
-  Madurai: '',
-  Nagapattinam: '',
-  Namakkal: '',
-  Nilgiris: '',
-  Perambalur: '',
-  Pudukkottai: '',
-  Ramanathapuram: '',
-  Ranipet: '',
-  Salem: '',
-  Sivaganga: '',
-  Tenkasi: '',
-  Thanjavur: '',
-  Theni: '',
-  Thoothukudi: '',
-  Tiruchirappalli: '',
-  Tirunelveli: '',
-  Tirupathur: '',
-  Tiruppur: '',
-  Tiruvallur: '',
-  Tiruvannamalai: '',
-  Tiruvarur: '',
-  Vellore: '',
-  Viluppuram: '',
-  Virudhunagar: '',
-};
+import { submit } from "./submit.js";
+import { search } from "./search.js";
+import { cities,city,gender,genders } from "./option.js";
+import { radio, radiobtn, radiobtn1 } from "./radiobtn.js";
 
-const city = document.getElementById('city');
-city.innerHTML = generateOptions(cities);
-function generateOptions(data) {
-  return Object.entries(data)
-    .map(
-      ([code, city]) =>
-        `<option value="${code}">${
-          code == 'TN1' ? ' ' : code
-        }  ${city}</option>`
-    )
-    .join(' ');
-}
-
-const gender = {
-  You: 'Choose',
-  Male: '',
-  Female: '',
-  Other: '',
-};
-
-const gend =document.getElementById('gender');
-gend.innerHTML = generateOptions(gender);
-// function generateOptions(data) {
-//     return Object.entries(data)
-//     .map (
-//         ([code, city]) =>
-//         `<option value="${code}">${code == 'You' ? " " : code}  ${city}</option>`
-//     )
-//     .join(" ");
-// }
-function result() {
-  radio = document.getElementById('rad-btn').value;
-}
-function result1() {
-  radio = document.getElementById('rad-btn1').value;
-}
 document.getElementById('data').style.display = 'block';
 document.getElementById('submit').onclick = function () {
   var table = document.getElementById('data');
@@ -140,3 +66,19 @@ function doSearch() {
     else targetTable.rows.item(rowIndex).style.display = 'table-row';
   }
 }
+function radioButton() {
+  result();
+};
+radioButton();
+function radioButton1() {
+  result1();
+};
+radioButton1();
+function searchCall() {
+    doSearch();
+};
+searchCall();
+function optionDisplay() {
+  generateOptions(data);
+};
+optionDisplay();

@@ -1,3 +1,4 @@
+import { radio } from "./radiobtn.js";
 export var submit = document.getElementById("submit");
 submit.addEventListener("click", function doSubmit() {
   var table = document.getElementById("data");
