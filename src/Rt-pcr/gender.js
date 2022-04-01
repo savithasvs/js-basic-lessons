@@ -1,4 +1,4 @@
-export const gender = {
+const gender = {
     You :'Choose',
     Male: '',
     Female: '',

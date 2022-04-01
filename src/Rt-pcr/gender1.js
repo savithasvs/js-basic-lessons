@@ -1,4 +1,4 @@
-import { gender } from "./gender";
+
 const gend =document.getElementById('gender');
 gend.innerHTML = generateOptions(gender);
 function generateOptions(data) {

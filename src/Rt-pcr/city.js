@@ -1,4 +1,4 @@
-import { cities } from "./city1";
+
 const city = document.getElementById("city");
     city.innerHTML = generateOptions(cities);
     function generateOptions(data) {
