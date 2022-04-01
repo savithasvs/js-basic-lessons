@@ -33,4 +33,13 @@ export const currencies = {
     ZAR: 'South African Rand',
     EUR: 'Euro',
   };
-
+  const city= document.getElementById("cities");
+  city.innerHTML = generateOptions(cities);
+  function generateOptions(data) {
+      return Object.entries(data)
+        .map(
+          ([code, city]) =>
+            `<option value="${code}">${code == 'TN00' ? " " : code}  ${city}</option>`
+        )
+        .join("");
+    }
