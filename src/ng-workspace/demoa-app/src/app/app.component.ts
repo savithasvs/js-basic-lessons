@@ -53,7 +53,7 @@ export class AppComponent {
   search(){
     console.log((<HTMLDivElement>document.getElementById("find")).innerHTML);
     if((<HTMLDivElement>document.getElementById("find")).innerText==""){
-      (<HTMLDivElement>document.getElementById("msg")).innerText="Sorry!! No records found in our database☹";
+      (<HTMLDivElement>document.getElementById("msg")).innerText="Kindly fill the data  ";
     }
     this.input=(<HTMLInputElement>document.getElementById("find")).value;
     this.store.forEach((element:any) => {

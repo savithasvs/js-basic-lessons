@@ -2,18 +2,19 @@ body {
     overflow-x: hidden;
   }
   .container {
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(218, 197, 17);
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
     text-align: center;
+  margin-left: -300px;
 
   }
   .field {
     align-self: center;
-    color: black;
+    color: rgb(21, 41, 155);
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -51,6 +52,7 @@ body {
     border: 1px solid black;
     text-align: center;
     width: 1350px;
+    margin-left: -300px;
   }
   #table tr th,
   #table1 tr th {
@@ -68,9 +70,11 @@ body {
     margin-bottom: 40px;
     margin-top: 10px;
     text-align: center;
+    margin-left: -300px;
   }
   .search input {
     border: 1px solid black;
+    margin-left: -300px;
   }
   .buttons {
     margin: 10px;
@@ -97,7 +101,7 @@ body {
   #msg {
     margin-top: 10px;
     font-weight: bold;
-    color:pink;
+    color:rgb(133, 5, 27);
   }
   button:hover {
     background-color: gray;
