@@ -1,0 +1,113 @@
+<section class="report1">
+    <header>
+        <h1> RT-PCR Report</h1>
+    </header>
+    <form action="">
+        <div class="form1">
+            <label for=pname>
+                <h3>Person Name</h3>
+            </label>
+            <input type="text" id="pname" name="pname" placeholder="Enter Your name">
+        </div>
+        <br>
+        <div class="form1">
+            <label for="aadhar">
+                <h3>Aadhar Number</h3>
+            </label>
+            <input type="text" id="aadhar" name="aadhar" placeholder="Format: xxxx xxxx xxxx"><br>
+        </div>
+        <br>
+
+        <div class="form1">
+            <label for="dob">
+                <h3>Date Of Birth</h3>
+            </label>
+            <input type="date" id="dob" name="dob"><br>
+        </div>
+        <br>
+        <div class="form1">
+            <label>
+                <h3>City</h3>
+            </label>
+            <select name="city" id="city" class="city">
+            </select>
+        </div><br>
+
+        <div class="form1">
+            <label>
+                <h3>Date Of Test</h3>
+            </label>
+            <input type="date" id="dot" name="dot"><br>
+        </div><br>
+
+        <div class="form1">
+            <label for="time">
+                <h3>Time Of Test</h3>
+            </label>
+            <input type="time" id="tot" name="tot"><br>
+        </div>
+        <br>
+
+        <div class="form1">
+            <label for="result">
+                <h3>Result</h3>
+            </label>
+            <input type="radio" id="rad-btn" name="radio" value="Positive" onclick="result()">
+            <label for="result">Positive</label><br>
+            <input type="radio" id="rad-btn1" name="radio" value="Negative" onclick="result1()">
+            <label for="result">Negative</label><br>
+        </div>
+        <br>
+
+        <div class="form1">
+            <label for=labname>
+                <h3>Lab Name</h3>
+            </label>
+            <input type="text" id="lname" name="lname" placeholder="Enter the lab name"><br>
+        </div>
+        <br>
+
+        <div class="form1">
+            <label for="repnum">
+                <h3>Report Number</h3>
+            </label>
+            <input type="number" id="repnum" name="repnum" placeholder="Enter your report number"><br>
+        </div>
+        <br>
+
+        <div class="form1">
+            <label>
+                <h3>Gender</h3>
+            </label>
+            <select name="gender" id="gender">
+            </select>
+        </div><br>
+        <div class="submit">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</section>
+<section class="sec2">
+    <table id="data">
+        <tr>
+            <br><br>
+            <th>Person Name</th><br><br>
+            <th>Aadhar Number</th>
+            <th>Date Of Birth</th>
+            <th>City</th>
+            <th>Date Of Test</th>
+            <th>Time Of Test</th>
+            <th>Result</th>
+            <th>Lab Name</th>
+            <th> Report No</th>
+            <th> Gender</th>
+        </tr>
+    </table>
+</section>
+<div>
+    <label for="valueTosearch" id="search">
+        <h3>Enter Aadhar Number </h3>
+    </label>
+    <input id="searchTerm" class="form-control" placeholder="Enter number">
+    <button type="submit" value="search" id="search1">Search</button>
+</div>
