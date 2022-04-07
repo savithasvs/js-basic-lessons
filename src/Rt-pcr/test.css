@@ -37,9 +37,9 @@ button {
     margin-left: -400px;
   }
   table, th, td {
-    border: 1px solid red;
+    border: 1px solid black;
     margin-left: -100;
-    background-color: pink
+    background-color:rgb(128, 128, 128);
   }
 table th,
 table td {
