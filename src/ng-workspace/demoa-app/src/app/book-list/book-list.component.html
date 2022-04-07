@@ -1,0 +1,28 @@
+<div class="page-header">
+    <div class="list-group">
+        <div *ngFor=" let item of books; let idx=index; let isFirst=first" class="list-group-item">
+            <button type="button" class="btn btn-primary">Count:
+                <span class="badge badge-secondary" [innerText]="idx+1"></span>
+            </button>
+            <h4>Book Name: {{item.name}}</h4>
+            <img alt="3 Zeros" [src]="item.images[0].thumb">
+            <h5>&#8377;{{item.price}}</h5>
+            <p>Author: {{item.author}}</p>
+            <button class="btn btn-primary" type="button" *ngIf="item.canBuy" (click)="onbuy(item)">Buy</button>
+            <hr />
+            <section>
+                <ul class="nav nav-pills">
+                    <li [class.active]="isTabselected(1)">
+                        <a href (click)="onTabChange($event,1)">Description</a>
+                    </li>
+                    <li [class.active]="isTabselected(2)">
+                        <a href (click)="onTabChange($event,2)">Review</a>
+                    </li>
+                    <li [class.active]="isTabselected(3)">
+                        <a href (click)="onTabChange($event,3)">Comments</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>

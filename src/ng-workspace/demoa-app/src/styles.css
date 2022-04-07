@@ -1,7 +1,2 @@
-@import url("../node_modules/bootstrap/dist/css/bootstrap-grid.css");
+@import url("../node_modules/bootstrap/dist/css/bootstrap.css");
 
-body {
-    background-color: aqua;
-    background-repeat: no-repeat;
-    margin-left: 600px;      
-  }
